@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7EBE7"
+    tools:context=".Tela_menu_letras">
+
+    <ImageView
+        android:id="@+id/logo_hiperabc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_pequeno_abc" />
+
+    <ImageButton
+        android:id="@+id/button_configuracoes"
+        android:layout_width="85dp"
+        android:layout_height="87dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/configuracao" />
+
+    <ImageButton
+        android:id="@+id/button_voltar"
+        android:layout_width="51dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="4dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="Tela_voltar_opcoes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.211"
+        app:srcCompat="@drawable/seta_voltar" />
+
+    <TextView
+        android:id="@+id/titulo_letras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/itim"
+        android:text="LETRAS"
+        android:textColor="#555151"
+        android:textSize="43sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <View
+        android:id="@+id/quadrado_alfabeto"
+        android:layout_width="144dp"
+        android:layout_height="160dp"
+        android:background="@drawable/cor_sombra_alfabeto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.635" />
+
+    <ImageButton
+        android:id="@+id/icone_alfabeto"
+        android:layout_width="142dp"
+        android:layout_height="67dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="Tela_alfabeto"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/quadrado_alfabeto"
+        app:layout_constraintEnd_toEndOf="@+id/quadrado_alfabeto"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/quadrado_alfabeto"
+        app:layout_constraintTop_toTopOf="@+id/quadrado_alfabeto"
+        app:layout_constraintVertical_bias="0.597"
+        app:srcCompat="@drawable/icone_abc_alfabeto" />
+
+    <TextView
+        android:id="@+id/text_alfabeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dangrek_regular"
+        android:text="Alfabeto"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/quadrado_alfabeto"
+        app:layout_constraintEnd_toEndOf="@+id/quadrado_alfabeto"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/quadrado_alfabeto"
+        app:layout_constraintTop_toTopOf="@+id/quadrado_alfabeto"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/quadrado_tracejado"
+        android:layout_width="144dp"
+        android:layout_height="160dp"
+        android:background="@drawable/cor_sombra_tracejado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.624"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.635" />
+
+    <TextView
+        android:id="@+id/text_tracejado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dangrek_regular"
+        android:text="Tracejado"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/quadrado_tracejado"
+        app:layout_constraintEnd_toEndOf="@+id/quadrado_tracejado"
+        app:layout_constraintStart_toStartOf="@+id/quadrado_tracejado"
+        app:layout_constraintTop_toTopOf="@+id/quadrado_tracejado"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/button_lapis"
+        android:onClick="Tela_Traco_A"
+        android:layout_width="86dp"
+        android:layout_height="80dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/quadrado_tracejado"
+        app:layout_constraintEnd_toEndOf="@+id/quadrado_tracejado"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/quadrado_tracejado"
+        app:layout_constraintTop_toTopOf="@+id/quadrado_tracejado"
+        app:layout_constraintVertical_bias="0.605"
+        app:srcCompat="@drawable/lapis__4__1" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/quadrado_tracejado"
+        app:layout_constraintEnd_toEndOf="@+id/quadrado_tracejado"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/quadrado_tracejado"
+        app:layout_constraintTop_toTopOf="@+id/quadrado_tracejado"
+        app:layout_constraintVertical_bias="0.681"
+        app:srcCompat="@drawable/raios_de_luz_1" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/quadrado_tracejado"
+        app:layout_constraintEnd_toEndOf="@+id/quadrado_tracejado"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/quadrado_tracejado"
+        app:layout_constraintTop_toTopOf="@+id/quadrado_tracejado"
+        app:layout_constraintVertical_bias="0.414"
+        app:srcCompat="@drawable/raios_de_luz_1__1_" />
+
+    <ImageButton
+        android:id="@+id/button_abc"
+        android:onClick="Tela_Traco_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/quadrado_tracejado"
+        app:layout_constraintEnd_toEndOf="@+id/quadrado_tracejado"
+        app:layout_constraintStart_toStartOf="@+id/quadrado_tracejado"
+        app:srcCompat="@drawable/group_19" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/quadrado_tracejado"
+        app:layout_constraintEnd_toEndOf="@+id/quadrado_tracejado"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="@+id/quadrado_tracejado"
+        app:layout_constraintTop_toTopOf="@+id/quadrado_tracejado"
+        app:layout_constraintVertical_bias="0.74"
+        app:srcCompat="@drawable/vector_175" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/quadrado_tracejado"
+        app:layout_constraintEnd_toEndOf="@+id/quadrado_tracejado"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="@+id/quadrado_tracejado"
+        app:layout_constraintTop_toTopOf="@+id/quadrado_tracejado"
+        app:layout_constraintVertical_bias="0.699"
+        app:srcCompat="@drawable/vector_176" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/quadrado_tracejado"
+        app:layout_constraintEnd_toEndOf="@+id/quadrado_tracejado"
+        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintStart_toStartOf="@+id/quadrado_tracejado"
+        app:layout_constraintTop_toTopOf="@+id/quadrado_tracejado"
+        app:layout_constraintVertical_bias="0.616"
+        app:srcCompat="@drawable/vector_177" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/button_abc"
+        app:layout_constraintEnd_toEndOf="@+id/quadrado_tracejado"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="@+id/quadrado_tracejado"
+        app:layout_constraintTop_toTopOf="@+id/quadrado_tracejado"
+        app:layout_constraintVertical_bias="0.625"
+        app:srcCompat="@drawable/vector_178" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/quadrado_tracejado"
+        app:layout_constraintEnd_toEndOf="@+id/quadrado_tracejado"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="@+id/quadrado_tracejado"
+        app:layout_constraintTop_toTopOf="@+id/quadrado_tracejado"
+        app:layout_constraintVertical_bias="0.638"
+        app:srcCompat="@drawable/vector_179" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/quadrado_tracejado"
+        app:layout_constraintEnd_toEndOf="@+id/quadrado_tracejado"
+        app:layout_constraintHorizontal_bias="0.688"
+        app:layout_constraintStart_toStartOf="@+id/quadrado_tracejado"
+        app:layout_constraintTop_toTopOf="@+id/quadrado_tracejado"
+        app:layout_constraintVertical_bias="0.677"
+        app:srcCompat="@drawable/vector_180" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/allerta_stencil</item>
+        <item>@font/arbutus</item>
+        <item>@font/asap</item>
+        <item>@font/baloo_da</item>
+        <item>@font/chewy</item>
+        <item>@font/coiny</item>
+        <item>@font/finger_paint</item>
+        <item>@font/freckle_face</item>
+        <item>@font/fredoka_one</item>
+        <item>@font/frijole</item>
+        <item>@font/henny_penny</item>
+        <item>@font/itim</item>
+        <item>@font/kanit_thin</item>
+        <item>@font/lato_thin</item>
+        <item>@font/molengo</item>
+        <item>@font/pacifico</item>
+        <item>@font/rancho</item>
+        <item>@font/sigmar_one</item>
+    </array>
+</resources>
